@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant" data-theme="pop">
+<html lang="zh-Hant" data-theme="sunny">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/mascot.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,11 +23,10 @@
     <div class="hero-body">
       <p class="hello">HELLO! I'M</p>
       <h1>Tammy</h1>
-      <div class="bubble">這裡是我的作品展示空間，收藏著每次從想法到實作的過程，一些探索、嘗試與創作。</div>
-      <span class="sticker s1" aria-hidden="true">💡</span>
-      <span class="sticker s2" aria-hidden="true">✏️</span>
-      <span class="sticker s3" aria-hidden="true">🚀</span>
-    </div>
+      <div class="intro">
+        <img class="mascot" src="images/mascot.png" alt="Tammy 的吉祥物" width="240" height="240">
+        <div class="bubble">這裡是我的作品展示空間，收藏著每次從想法到實作的過程，一些探索、嘗試與創作。</div>
+      </div>    </div>
   </header>
 
   <div class="marquee" aria-hidden="true">
@@ -46,11 +46,6 @@
     <h2 class="section-title"><span>CONTACT</span>聯絡我</h2>
     <p>有想法想聊聊，歡迎寫信給我！</p>
     <a class="btn big" id="mail" href="#">📮 寄信給我</a>
-    <div class="theme-switch">
-      <span>換個風格：</span>
-      <button type="button" data-set-theme="pop">繽紛</button>
-      <button type="button" data-set-theme="clean">簡約</button>
-    </div>
     <small>© <span id="year"></span> Tammy</small>
   </footer>
 

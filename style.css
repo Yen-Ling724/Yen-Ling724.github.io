@@ -16,6 +16,38 @@
   --c-lime: #c6f36b; --c-sky: #7fd3ff; --c-pink: #ff9ec4;
   --c-orange: #ffb35c; --c-purple: #b9a4ff; --c-yellow: #ffe45c;
 }
+/* 其他繽紛配色：只覆蓋要換的顏色，其餘沿用上面 */
+[data-theme="mint"] {
+  --bg: #effcf7; --ink: #123a37; --muted: #4c6b67;
+  --hero-bg: #17b3a3; --accent: #ff7a59;
+}
+[data-theme="berry"] {
+  --bg: #fbf3ff; --ink: #2a1740; --muted: #67557d;
+  --hero-bg: #8a3ffc; --accent: #ffc928;
+}
+[data-theme="sunset"] {
+  --bg: #fff3e8; --ink: #2b1c14; --muted: #74594a;
+  --hero-bg: #ff6a3d; --accent: #2f3bd6;
+}
+[data-theme="sunny"] {
+  --bg: #fffaea; --ink: #2e1f0b; --muted: #7a5c32;
+  --hero-bg: #ffc93c; --hero-ink: #2e1f0b; --accent: #ff7b1c;
+  --c-lime: #d4f27a; --c-sky: #9fe3ff; --c-pink: #ffb3c7;
+  --c-orange: #ffb15e; --c-purple: #c9b8ff; --c-yellow: #fff07a;
+}
+[data-theme="mango"] {
+  --bg: #fff8ec; --ink: #2e1f0b; --muted: #7a5c32;
+  --hero-bg: #ff9a2e; --hero-ink: #2e1f0b; --accent: #ffe14d;
+  --c-lime: #d4f27a; --c-sky: #9fe3ff; --c-pink: #ffb3c7;
+  --c-orange: #ffc98a; --c-purple: #c9b8ff; --c-yellow: #fff07a;
+}
+[data-theme="mango"] .marquee { color: var(--ink); }
+[data-theme="night"] {
+  --bg: #17142b; --ink: #f4f1ff; --paper: #242042; --muted: #b9b3d6;
+  --hero-bg: #0e0c1d; --hero-ink: #f4f1ff; --accent: #ff4fd8;
+  --c-lime: #9be15d; --c-sky: #4fc3f7; --c-pink: #ff7ab8;
+  --c-orange: #ff9f45; --c-purple: #9d7bff; --c-yellow: #ffd93d;
+}
 [data-theme="clean"] {
   --bg: #f7f7f5;
   --ink: #1f1f1f;
@@ -60,15 +92,23 @@ h1 {
   content: ""; position: absolute; top: -14px; left: 50%; width: 22px; height: 22px; background: var(--paper);
   border-left: var(--border); border-top: var(--border); transform: translateX(-50%) rotate(45deg);
 }
-.sticker {
-  position: absolute; font-size: clamp(34px, 6vw, 60px); transform: rotate(calc(-12deg * var(--tilt)));
-  animation: bob 3s ease-in-out infinite;
+/* 吉祥物 + 對話框 */
+.intro { display: flex; align-items: center; justify-content: center; gap: 28px; }
+.mascot {
+  width: clamp(130px, 18vw, 190px); height: auto; flex-shrink: 0; transform-origin: 50% 90%;
+  animation: sway 2.6s ease-in-out infinite; cursor: pointer;
+  filter: drop-shadow(calc(4px * var(--tilt)) calc(4px * var(--tilt)) 0 rgba(0, 0, 0, .18));
 }
-.s1 { top: 0; left: 6%; }
-.s2 { top: 34%; right: 4%; animation-delay: -1s; }
-.s3 { bottom: -20px; left: 10%; animation-delay: -2s; }
-[data-theme="clean"] .sticker { display: none; }
-@keyframes bob { 50% { translate: 0 -10px; } }
+.mascot:hover { animation: hop .5s ease-in-out infinite; }
+@keyframes sway { 50% { transform: rotate(-6deg); } }
+@keyframes hop { 50% { transform: translateY(-14px) rotate(4deg); } }
+/* 寬螢幕：對話框尖角指向左邊的吉祥物 */
+.intro .bubble::before { top: 50%; left: -14px; transform: translateY(-50%) rotate(-45deg); }
+@media (max-width: 640px) {
+  .intro { flex-direction: column; gap: 22px; }
+  .intro .bubble::before { top: -14px; left: 50%; transform: translateX(-50%) rotate(45deg); }
+}
+@media (prefers-reduced-motion: reduce) { .mascot, .mascot:hover { animation: none; } }
 
 /* ===== 跑馬燈 ===== */
 .marquee { background: var(--accent); color: var(--paper); border-block: var(--border); overflow: hidden; white-space: nowrap; }
@@ -125,5 +165,5 @@ h1 {
 .contact small { color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track, .sticker { animation: none; }
+  .marquee-track { animation: none; }
 }

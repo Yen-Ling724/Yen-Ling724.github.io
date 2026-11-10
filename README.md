@@ -18,6 +18,7 @@
 | demo / code | 網站與程式碼的網址（選填） |
 | sample | 設為 true 會顯示「範例」標籤，換成正式內容時請刪掉 |
 
-## 換風格
+## 換配色
 
-`style.css` 最上面的變數控制顏色、字體和邊框。`index.html` 裡的 `data-theme` 決定預設風格（`pop` 繽紛或 `clean` 簡約）。
+`index.html` 第 2 行的 `data-theme` 決定配色，目前是 `sunny`（陽光柳橙）。
+可用的配色都寫在 `style.css` 最上面：pop、mint、berry、sunset、night、clean、sunny、mango。

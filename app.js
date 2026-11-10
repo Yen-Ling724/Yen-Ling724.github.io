@@ -54,13 +54,8 @@ fetch('projects.json')
   .then((data) => { projects = data; renderFilters(); render(); })
   .catch(() => { grid.textContent = '作品資料載入失敗，請稍後再試。'; });
 
-// 風格切換（記住上次的選擇）
-const root = document.documentElement;
-try { const saved = localStorage.getItem('theme'); if (saved) root.dataset.theme = saved; } catch {}
-document.querySelectorAll('[data-set-theme]').forEach((b) => b.addEventListener('click', () => {
-  root.dataset.theme = b.dataset.setTheme;
-  try { localStorage.setItem('theme', b.dataset.setTheme); } catch {}
-}));
+// 配色固定由 index.html 的 data-theme 決定；清掉之前預覽時記住的選擇
+try { localStorage.removeItem('theme'); } catch {}
 
 // Email 拆開寫，減少被垃圾信程式抓到
 const mail = ['a0968550502', 'gmail.com'].join('@');
