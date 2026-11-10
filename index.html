@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="pop">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tammy｜作品集</title>
+  <meta name="description" content="Tammy 的作品展示空間，收藏著每次從想法到實作的過程。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="logo" href="#">TAMMY</a>
+      <div class="nav-links">
+        <a href="#works">作品</a>
+        <a href="#contact">聯絡</a>
+      </div>
+    </nav>
+    <div class="hero-body">
+      <p class="hello">HELLO! I'M</p>
+      <h1>Tammy</h1>
+      <div class="bubble">這裡是我的作品展示空間，收藏著每次從想法到實作的過程，一些探索、嘗試與創作。</div>
+      <span class="sticker s1" aria-hidden="true">💡</span>
+      <span class="sticker s2" aria-hidden="true">✏️</span>
+      <span class="sticker s3" aria-hidden="true">🚀</span>
+    </div>
+  </header>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>IDEA ✦ TRY ✦ MAKE ✦ PLAY ✦&nbsp;</span><span>IDEA ✦ TRY ✦ MAKE ✦ PLAY ✦&nbsp;</span>
+      <span>IDEA ✦ TRY ✦ MAKE ✦ PLAY ✦&nbsp;</span><span>IDEA ✦ TRY ✦ MAKE ✦ PLAY ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <main id="works" class="works">
+    <h2 class="section-title"><span>WORKS</span>作品</h2>
+    <div class="filters" role="group" aria-label="分類篩選"></div>
+    <div class="grid" aria-live="polite"></div>
+  </main>
+
+  <footer id="contact" class="contact">
+    <h2 class="section-title"><span>CONTACT</span>聯絡我</h2>
+    <p>有想法想聊聊，歡迎寫信給我！</p>
+    <a class="btn big" id="mail" href="#">📮 寄信給我</a>
+    <div class="theme-switch">
+      <span>換個風格：</span>
+      <button type="button" data-set-theme="pop">繽紛</button>
+      <button type="button" data-set-theme="clean">簡約</button>
+    </div>
+    <small>© <span id="year"></span> Tammy</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+[
+  {
+    "title": "工序五金｜店內找貨",
+    "summary": "讓顧客輸入關鍵字，馬上知道商品在哪一層貨架。",
+    "tags": ["網頁", "Google Apps Script"],
+    "category": "網頁",
+    "emoji": "🔩",
+    "color": "lime",
+    "demo": "https://yen-ling724.github.io/hardware-store-finder/",
+    "code": "https://github.com/Yen-Ling724/hardware-store-finder"
+  },
+  {
+    "title": "範例專案 A",
+    "summary": "這裡放一句話說明，20 字以內最剛好。",
+    "tags": ["AI", "聊天機器人"],
+    "category": "AI",
+    "emoji": "🤖",
+    "color": "sky",
+    "sample": true
+  },
+  {
+    "title": "範例專案 B",
+    "summary": "可以放截圖：把圖片放進 images 資料夾。",
+    "tags": ["設計"],
+    "category": "設計",
+    "emoji": "🎨",
+    "color": "pink",
+    "sample": true
+  },
+  {
+    "title": "範例專案 C",
+    "summary": "沒有網址的專案，按鈕會自動隱藏。",
+    "tags": ["網頁", "實驗"],
+    "category": "網頁",
+    "emoji": "🧪",
+    "color": "orange",
+    "sample": true
+  },
+  {
+    "title": "範例專案 D",
+    "summary": "分類按鈕會依照 category 自動產生。",
+    "tags": ["AI"],
+    "category": "AI",
+    "emoji": "✨",
+    "color": "purple",
+    "sample": true
+  },
+  {
+    "title": "範例專案 E",
+    "summary": "卡片 5～9 張都會自動排好。",
+    "tags": ["設計", "插畫"],
+    "category": "設計",
+    "emoji": "🖍️",
+    "color": "yellow",
+    "sample": true
+  }
+]
