@@ -1,15 +1,5 @@
 [
   {
-    "title": "工序五金｜店內找貨",
-    "summary": "讓顧客輸入關鍵字，馬上知道商品在哪一層貨架。",
-    "tags": ["網頁", "Google Apps Script"],
-    "category": "網頁",
-    "emoji": "🔩",
-    "color": "lime",
-    "demo": "https://script.google.com/macros/s/AKfycbyMHEzaqVdoGDRx8a_sHJSFE45vhczVhodK3DPe-v4XdtnMEqbhi_T7TIB2Hx3IkD9B/exec",
-    "code": "https://github.com/Yen-Ling724/hardware-store-finder"
-  },
-  {
     "title": "作夢龍｜LINE 貼圖",
     "summary": "作夢龍和牠的小被被，原創 LINE 貼圖。",
     "tags": ["插畫", "LINE 貼圖"],
@@ -19,6 +9,16 @@
     "color": "sky",
     "demo": "https://line.me/S/sticker/35058139",
     "demoLabel": "去看貼圖"
+  },
+  {
+    "title": "工序五金｜店內找貨",
+    "summary": "讓顧客輸入關鍵字，馬上知道商品在哪一層貨架。",
+    "tags": ["網頁", "Google Apps Script"],
+    "category": "網頁",
+    "emoji": "🔩",
+    "color": "lime",
+    "demo": "https://script.google.com/macros/s/AKfycbyMHEzaqVdoGDRx8a_sHJSFE45vhczVhodK3DPe-v4XdtnMEqbhi_T7TIB2Hx3IkD9B/exec",
+    "code": "https://github.com/Yen-Ling724/hardware-store-finder"
   },
   {
     "title": "範例專案 B",
