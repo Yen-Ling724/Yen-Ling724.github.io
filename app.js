@@ -15,11 +15,11 @@ function el(tag, attrs = {}, children = []) {
 
 function card(p) {
   const cover = el('div', { class: 'cover', style: `background: var(--c-${p.color || 'yellow'})` });
-  if (p.image) cover.append(el('img', { src: p.image, alt: p.title, loading: 'lazy' }));
+  if (p.image) cover.append(el('img', { src: p.image, alt: p.title, loading: 'lazy', class: p.imageFit === 'contain' ? 'contain' : '' }));
   else cover.append(el('span', { text: p.emoji || '✨', 'aria-hidden': 'true' }));
 
   const actions = el('div', { class: 'actions' });
-  if (p.demo) actions.append(el('a', { class: 'btn', href: p.demo, target: '_blank', rel: 'noopener', text: '看網站' }));
+  if (p.demo) actions.append(el('a', { class: 'btn', href: p.demo, target: '_blank', rel: 'noopener', text: p.demoLabel || '看網站' }));
   if (p.code) actions.append(el('a', { class: 'btn ghost', href: p.code, target: '_blank', rel: 'noopener', text: '看程式碼' }));
 
   const body = el('div', { class: 'card-body' }, [

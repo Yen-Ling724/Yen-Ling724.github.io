@@ -10,13 +10,15 @@
     "code": "https://github.com/Yen-Ling724/hardware-store-finder"
   },
   {
-    "title": "範例專案 A",
-    "summary": "這裡放一句話說明，20 字以內最剛好。",
-    "tags": ["AI", "聊天機器人"],
-    "category": "AI",
-    "emoji": "🤖",
+    "title": "作夢龍｜LINE 貼圖",
+    "summary": "作夢龍和牠的小被被，原創 LINE 貼圖。",
+    "tags": ["插畫", "LINE 貼圖"],
+    "category": "插畫",
+    "image": "images/dream-dragon.png",
+    "imageFit": "contain",
     "color": "sky",
-    "sample": true
+    "demo": "https://line.me/S/sticker/35058139",
+    "demoLabel": "去看貼圖"
   },
   {
     "title": "範例專案 B",
