@@ -30,32 +30,5 @@
     "demo": "https://ccc-retail-demo.onrender.com/",
     "code": "https://github.com/Yen-Ling724/smart-retail-oms",
     "badge": "首次開啟約需 1 分鐘"
-  },
-  {
-    "title": "範例專案 C",
-    "summary": "沒有網址的專案，按鈕會自動隱藏。",
-    "tags": ["網頁", "實驗"],
-    "category": "網頁",
-    "emoji": "🧪",
-    "color": "orange",
-    "sample": true
-  },
-  {
-    "title": "範例專案 D",
-    "summary": "分類按鈕會依照 category 自動產生。",
-    "tags": ["AI"],
-    "category": "AI",
-    "emoji": "✨",
-    "color": "purple",
-    "sample": true
-  },
-  {
-    "title": "範例專案 E",
-    "summary": "卡片 5～9 張都會自動排好。",
-    "tags": ["設計", "插畫"],
-    "category": "設計",
-    "emoji": "🖍️",
-    "color": "yellow",
-    "sample": true
   }
 ]
