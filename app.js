@@ -30,7 +30,9 @@ function card(p) {
   if (actions.children.length) body.append(actions);
 
   const node = el('article', { class: 'card' }, [cover, body]);
-  if (p.sample) node.append(el('span', { class: 'badge', text: '範例' }));
+  // 右上角小標籤：範例卡片顯示「範例」，也可以用 badge 自訂文字（例如「上線準備中」）
+  const badge = p.badge || (p.sample ? '範例' : '');
+  if (badge) node.append(el('span', { class: 'badge', text: badge }));
   return node;
 }
 

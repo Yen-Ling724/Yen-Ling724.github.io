@@ -17,6 +17,7 @@
 | color | 封面底色：lime / sky / pink / orange / purple / yellow |
 | demo / code | 網站與程式碼的網址（選填） |
 | sample | 設為 true 會顯示「範例」標籤，換成正式內容時請刪掉 |
+| badge | 右上角自訂小標籤，例如 `"上線準備中"`（選填） |
 
 ## 換配色
 
