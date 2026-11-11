@@ -27,7 +27,9 @@
     "category": "網頁",
     "image": "images/ccc-retail.jpg",
     "color": "sky",
-    "badge": "上線準備中"
+    "demo": "https://ccc-retail-demo.onrender.com/",
+    "code": "https://github.com/Yen-Ling724/smart-retail-oms",
+    "badge": "首次開啟約需 1 分鐘"
   },
   {
     "title": "範例專案 C",
