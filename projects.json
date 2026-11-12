@@ -25,7 +25,7 @@
     "summary": "整合商品、多門市庫存、訂單與智慧導購的零售營運系統。",
     "tags": ["React", "Node.js", "PostgreSQL", "零售營運"],
     "category": "網頁",
-    "image": "images/ccc-retail.jpg",
+    "image": "images/ccc-retail-red.jpg",
     "color": "sky",
     "demo": "https://ccc-retail-demo.onrender.com/",
     "code": "https://github.com/Yen-Ling724/smart-retail-oms",
