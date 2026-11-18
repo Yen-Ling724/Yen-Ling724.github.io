@@ -2,7 +2,10 @@
   {
     "title": "作夢龍｜LINE 貼圖",
     "summary": "作夢龍和牠的小被被，原創 LINE 貼圖。",
-    "tags": ["插畫", "LINE 貼圖"],
+    "tags": [
+      "插畫",
+      "LINE 貼圖"
+    ],
     "category": "插畫",
     "image": "images/dream-dragon.png",
     "imageFit": "contain",
@@ -13,7 +16,10 @@
   {
     "title": "工序五金｜店內找貨",
     "summary": "讓顧客輸入關鍵字，馬上知道商品在哪一層貨架。",
-    "tags": ["網頁", "Google Apps Script"],
+    "tags": [
+      "網頁",
+      "Google Apps Script"
+    ],
     "category": "網頁",
     "image": "images/hardware-store-hero2.jpg",
     "color": "lime",
@@ -23,12 +29,32 @@
   {
     "title": "CCC家電 AI 智慧導購與門市營運管理系統",
     "summary": "整合商品、多門市庫存、訂單與智慧導購的零售營運系統。",
-    "tags": ["React", "Node.js", "PostgreSQL", "零售營運"],
+    "tags": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "零售營運"
+    ],
     "category": "網頁",
     "image": "images/ccc-retail-red.jpg",
     "color": "sky",
     "demo": "https://ccc-retail-demo.onrender.com/",
     "code": "https://github.com/Yen-Ling724/smart-retail-oms",
     "badge": "首次開啟約需 1 分鐘"
+  },
+  {
+    "title": "小比｜生活採買工作台",
+    "summary": "依生活情境（颱風、地震、大掃除…）產生採買清單，並示範購物籃關聯分析與門市排班熱區。",
+    "tags": [
+      "網頁",
+      "資料視覺化",
+      "零售營運"
+    ],
+    "category": "網頁",
+    "image": "images/shopping-studio.jpg",
+    "color": "lime",
+    "demo": "projects/shopping-studio/",
+    "code": "https://github.com/Yen-Ling724/Yen-Ling724.github.io/tree/main/projects/shopping-studio",
+    "badge": "概念原型"
   }
 ]
